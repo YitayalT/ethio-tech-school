@@ -6,7 +6,7 @@ const Testimonials = () => {
     {
       name: "Dawit Mekonnen",
       role: "Computer Science Student, AAU",
-      content: "Ethio Tech School's assignment assistance helped me improve my grades while their IT training gave me practical skills my courses didn't cover. The perfect academic partner!",
+      content: "Elevana Solutions' assignment assistance helped me improve my grades while their IT training gave me practical skills my courses didn't cover. The perfect academic partner!",
       avatar: "https://randomuser.me/api/portraits/men/22.jpg"
     },
     {
@@ -18,8 +18,20 @@ const Testimonials = () => {
     {
       name: "Tewodros Abebe",
       role: "Fayda ID Customer",
-      content: "I was struggling with the digital ID process, but Ethio Tech School handled everything efficiently. They saved me weeks of government office visits.",
+      content: "I was struggling with the digital ID process, but Elevana Solutions handled everything efficiently. They saved me weeks of government office visits.",
       avatar: "https://randomuser.me/api/portraits/men/45.jpg"
+    },
+    {
+      name: "Hanna Birhanu",
+      role: "High School Graduate",
+      content: "Thanks to Elevana's scholarship application guidance, I received a full tuition scholarship for my undergraduate studies!",
+      avatar: "https://randomuser.me/api/portraits/women/44.jpg"
+    },
+    {
+      name: "Samuel Getnet",
+      role: "Junior Developer",
+      content: "The programming and AI tools training at Elevana gave me the confidence to build my own web applications and land freelance jobs.",
+      avatar: "https://randomuser.me/api/portraits/men/32.jpg"
     }
   ];
 
@@ -36,15 +48,15 @@ const Testimonials = () => {
   return (
     <section id="testimonials" className="py-16 font-serif bg-gray-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">Success Stories</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-teal-800">Success Stories</h2>
         <p className="text-xl text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-          Hear how we're transforming academic and professional journeys in Ethiopia
+          Hear how we're transforming academic and professional journeys in Ethiopia.
         </p>
         
         <div className="max-w-4xl mx-auto relative">
           {/* Testimonial Card */}
           <div className="bg-white p-8 md:p-10 rounded-lg shadow-md">
-            <FaQuoteLeft className="text-blue-600 text-3xl mb-6" />
+            <FaQuoteLeft className="text-teal-600 text-3xl mb-6" />
             <p className="text-lg md:text-xl text-gray-700 mb-8 italic">
               {testimonials[currentTestimonial].content}
             </p>
@@ -67,14 +79,14 @@ const Testimonials = () => {
             className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-8 bg-white p-2 rounded-full shadow-md hover:bg-gray-100 transition"
             aria-label="Previous testimonial"
           >
-            <FaChevronLeft className="text-blue-600" />
+            <FaChevronLeft className="text-teal-600" />
           </button>
           <button 
             onClick={nextTestimonial}
             className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-8 bg-white p-2 rounded-full shadow-md hover:bg-gray-100 transition"
             aria-label="Next testimonial"
           >
-            <FaChevronRight className="text-blue-600" />
+            <FaChevronRight className="text-teal-600" />
           </button>
           
           {/* Dots Indicator */}
@@ -83,7 +95,7 @@ const Testimonials = () => {
               <button
                 key={index}
                 onClick={() => setCurrentTestimonial(index)}
-                className={`w-3 h-3 rounded-full transition ${currentTestimonial === index ? 'bg-blue-600' : 'bg-gray-300 hover:bg-blue-400'}`}
+                className={`w-3 h-3 rounded-full transition ${currentTestimonial === index ? 'bg-teal-600' : 'bg-gray-300 hover:bg-blue-400'}`}
                 aria-label={`View testimonial ${index + 1}`}
               ></button>
             ))}

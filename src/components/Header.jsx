@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
-
+import logo from '../assets/image/logo.gif'; // Correct import path
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -9,10 +9,16 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-blue-600 text-white font-serif shadow-md fixed w-full z-10">
+    <header className="bg-teal-900 text-white font-serif shadow-md fixed w-full z-10">
       <div className="container mx-auto px-4 py-3">
         <div className="flex justify-between items-center">
-          <div className="text-2xl font-bold font-serif">Ethio tech school</div>
+          <div className="flex items-center">
+            <img 
+              src={logo} 
+              alt="Elevana Solutions" 
+                className="h-16 w-16 object-cover rounded-full hover:scale-110 transition-transform duration-300"             />
+            <span className="text-2xl ml-3 font-bold font-serif">Elevana Solutions</span>
+          </div>
           
           {/* Mobile menu button */}
           <div className="md:hidden">
@@ -41,28 +47,28 @@ const Header = () => {
             <div className="flex flex-col space-y-4">
               <a 
                 href="#home" 
-                className="hover:text-green-200 transition py-2 border-b border-blue-500"
+                className="hover:text-green-200 transition py-2 border-b border-teal-500"
                 onClick={toggleMenu}
               >
                 Home
               </a>
               <a 
                 href="#about" 
-                className="hover:text-green-200 transition py-2 border-b border-blue-500"
+                className="hover:text-green-200 transition py-2 border-b border-teal-500"
                 onClick={toggleMenu}
               >
                 About Us
               </a>
               <a 
                 href="#services" 
-                className="hover:text-green-200 transition py-2 border-b border-blue-500"
+                className="hover:text-green-200 transition py-2 border-b border-teal-500"
                 onClick={toggleMenu}
               >
                 Our Services
               </a>
               <a 
                 href="#testimonials" 
-                className="hover:text-green-200 transition py-2 border-b border-blue-500"
+                className="hover:text-green-200 transition py-2 border-b border-teal-500"
                 onClick={toggleMenu}
               >
                 Testimonials
