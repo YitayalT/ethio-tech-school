@@ -13,6 +13,11 @@ import {
 
 const Services = () => {
   const services = [
+     {
+      icon: <FaBullhorn className="text-4xl text-teal-600" />,
+      title: "Boost Your Business on Social Media",
+      description: "Grow your brand with our tailored content, marketing strategies, and engagement support on social platforms."
+    },
     {
       icon: <FaGlobeAfrica className="text-4xl text-teal-600" />,
       title: "Scholarship Application",
@@ -43,11 +48,7 @@ const Services = () => {
       title: "Online Job Application Support",
       description: "Step-by-step support in finding jobs and completing online job applications."
     },
-    {
-      icon: <FaBullhorn className="text-4xl text-teal-600" />,
-      title: "Boost Your Business on Social Media",
-      description: "Grow your brand with our tailored content, marketing strategies, and engagement support on social platforms."
-    },
+   
     {
       icon: <FaCode className="text-4xl text-teal-600" />,
       title: "Programming Language & AI Tools Teaching",
