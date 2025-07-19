@@ -8,11 +8,11 @@ const Hero = () => {
     >
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-            Welcome to Elevana Solutions
+          <h1 className="text-3xl md:text-5xl lg:text-4xl font-bold mb-4">
+          Elevana Solutions - ኢሌቫና ሶሉሺንስ
           </h1>
           <p className="text-lg italic text-gray-200 mb-6">
-            “Guiding You to a Brighter Tomorrow.”
+            “Guiding You to a Brighter Tomorrow - እርስዎን ወደ ብሩህ ነገ የሚመራዎት!”
           </p>
           <p className="text-xl md:text-2xl italic mb-8">
             At Elevana Solutions, we believe in the power of knowledge, skills, and guidance to transform lives. Whether you're a student needing academic support, a job seeker polishing your CV, or a professional upskilling in tech — we are here to guide you to a brighter tomorrow.
