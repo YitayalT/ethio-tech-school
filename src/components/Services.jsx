@@ -6,7 +6,7 @@ import {
   FaFileAlt,
   FaPenFancy,
   FaUserTie,
-  FaLaptopCode,
+  FaBullhorn,
   FaCode,
   FaTasks
 } from 'react-icons/fa';
@@ -44,9 +44,9 @@ const Services = () => {
       description: "Step-by-step support in finding jobs and completing online job applications."
     },
     {
-      icon: <FaLaptopCode className="text-4xl text-teal-600" />,
-      title: "IT & Computer Skills Training",
-      description: "Hands-on training from basic computer skills to essential workplace software tools."
+      icon: <FaBullhorn className="text-4xl text-teal-600" />,
+      title: "Boost Your Business on Social Media",
+      description: "Grow your brand with our tailored content, marketing strategies, and engagement support on social platforms."
     },
     {
       icon: <FaCode className="text-4xl text-teal-600" />,
